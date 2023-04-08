@@ -1,0 +1,106 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #212E3A;
+    height: 80px;
+    margin-top: -10px;
+    padding-bottom: 10px;
+  }
+  
+  h1 {
+    font-family: 'Open Sans';
+    font-size: 20px;
+    font-weight: 700;
+    padding-left: 10px;
+    color: #ffffff;
+    margin: 0;
+  }
+  
+  .logo {
+    height: 34px;
+    padding-left: 20px;
+    padding-top: 10px;
+  }
+  .your-workouts{
+    font-family: 'Open Sans';
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: 700;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    height: calc(20vh - 80px);
+    padding-bottom: 5px;
+
+  }
+ .motivation-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: calc(15vh - 80px);
+    padding-bottom: 60px;
+    padding-top: 40px;
+ }
+  .motivation {
+   
+    font-family: 'Open Sans';
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+    background-color: #FF4B64;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 5px 20px;
+    align-content: center;
+  }
+  
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: calc(50vh - 80px);
+    padding: 20px;
+  }
+  
+  .box {
+    width: 500px;
+    height: 500px;
+    background-color: #2C3944;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  h2 {
+    font-family: 'Open Sans';
+    font-size: 28px;
+    font-weight: 400;
+    margin: 0;
+    color: #ffffff;
+    margin-bottom: 10px;
+    padding-top: 30px;
+  }
+  
+  p {
+    font-family: 'Open Sans';
+    font-size: 16px;
+    text-align: center;
+    color: #CACDD0;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: #212E3A;
+  }
+  
