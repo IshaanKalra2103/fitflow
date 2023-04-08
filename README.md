@@ -24,7 +24,7 @@ Whether you're feeling down, stressed, or energized, our website has got you cov
 
 ## Flowchart
 
-![Flowchart](/path/to/flowchart.png)
+![](Artifacts/Flowchart.png)
 
 ## Project Video
 
