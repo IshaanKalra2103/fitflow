@@ -4,8 +4,8 @@ gapi.load('client:auth2', initAuth);
 // Initialize the API client library and set up sign-in listeners
 function initAuth() {
   gapi.client.init({
-    apiKey: 'YOUR_API_KEY',
-    clientId: 'YOUR_CLIENT_ID',
+    apiKey: 'AIzaSyBU9ZOVki3meCJ9ylchp94aU0qj3GI3eM0',
+    clientId: '428360630604-01h0rpcavi8mfo6mc8gih2b7c4j3ag7e.apps.googleusercontent.com',
     scope: 'email'
   }).then(function () {
     // Listen for sign-in state changes
