@@ -2,17 +2,19 @@ const form = document.querySelector('form');
 const input = document.querySelector('.emotional-state');
 let emotionalState;
 
-form.addEventListener('submit', (event) => {
-  event.preventDefault();
-
-  if (input.value.toLowerCase() === "happy" || input.value.toLowerCase() === "joyful" || input.value.toLowerCase() === "excited" 
-  || input.value.toLowerCase() === "sad" || input.value.toLowerCase() === "depressed" || input.value.toLowerCase() === "down" 
-  || input.value.toLowerCase() === "angry" || input.value.toLowerCase() === "frustrated"|| input.value.toLowerCase() === "irritated"){
-    emotionalState = input.value.toLowerCase();
-  } else{
-    alert("Please enter a valid emotional state");
+input.addEventListener("keypress", function(event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    if (input.value.toLowerCase() === "happy" || input.value.toLowerCase() === "joyful" || input.value.toLowerCase() === "excited" 
+    || input.value.toLowerCase() === "sad" || input.value.toLowerCase() === "depressed" || input.value.toLowerCase() === "down" 
+    || input.value.toLowerCase() === "angry" || input.value.toLowerCase() === "frustrated"|| input.value.toLowerCase() === "irritated"){
+      emotionalState = input.value.toLowerCase();
+    } else{
+      alert("Please enter a valid emotional state");
+    }
   }
 });
+
 
 const startTimeMillis = new Date().setHours(0,0,0,0);
 const endTimeMillis = new Date().getTime();

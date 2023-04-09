@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-   
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <title>Splash Page</title>
-    <link rel="stylesheet" href="./css/splash1.css">
-  </head>
-  <body>
-    <div id = "vanta-canvas"></div>
-    <header>
-      <img class="logo" src="./assets/logo.png" alt="help">
-    </header>
-    <main>
-      <p id="typing-text">Hello, how are you feeling today?</p>
-      <input type="text" placeholder="" id="text-box" style="opacity: 0;">
-    </main>
+<head>
+  <meta charset="UTF-8">
+  <title>Login with Google Account</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+  <div class="container mt-5 sign-in">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header bg-dark text-white text-center">
+            <h4>Login with Google Account</h4>
+          </div>
+          <div class="card-body">
+              <center>
+                <button class="btn btn-outline-dark sign-out-button" onclick="signIn();">Sign In</button>
+              </center>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    
-  </body>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
-  <script src="./js/animation.js"></script>
+  <script src="./js/script.js"></script>
+</body>
 </html>
+

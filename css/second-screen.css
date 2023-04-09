@@ -1,11 +1,11 @@
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #212E3A;
-    height: 80px;
-    margin-top: -10px;
-    padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  height: 80px;
+  margin-top: -10px;
+  padding-bottom: 10px;
   }
   
   h1 {

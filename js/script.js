@@ -1,22 +1,30 @@
-function onSignIn(googleUser) {
+function signIn(){
+  // Google's OAuth 2.0 endpoint for requesting an access token
+let oauth2Endpoint = 'https://accounts.google.com/o/oauth2/v2/auth';
 
-  var id_token = googleUser.getAuthResponse().id_token;
+// Create <form> element to submit parameters to OAuth 2.0 endpoint.
+var form = document.createElement('form');
+form.setAttribute('method', 'GET'); // Send as a GET request.
+form.setAttribute('action', oauth2Endpoint);
 
-  // Redirect the user to the next page
-  window.location.href = "next-page.html";
-  //   var profile = googleUser.getBasicProfile();
-  //  $(".picture").attr(profile.getImageUrl());
-  //  $(".name").text(profile.getName());
-  //  $(".data").css("display","block");
-  //  $(".sign-in").css("display","none");
-  }
+// Parameters to pass to OAuth 2.0 endpoint.
+var params = {'client_id': '428360630604-bk2t2jc4f2ajvnbgi223nsvb7u83qddf.apps.googleusercontent.com',
+              'redirect_uri': 'http://127.0.0.1:5500/profile.html',
+              'response_type': 'token',
+              'scope':'https://www.googleapis.com/auth/userinfo.profile',
+              'include_granted_scopes': 'true',
+              'state': 'pass-through value'};
 
-  function signOut() {
-    var auth2 = gapi.auth2.getAuthInstance();
-    auth2.signOut().then(function () {
-      alert("You have been successfully signed out!")
-      $(".sign-in").css("display","block");
-    });
-  }
+// Add form parameters as hidden input values.
+for (var p in params) {
+  var input = document.createElement('input');
+  input.setAttribute('type', 'hidden');
+  input.setAttribute('name', p);
+  input.setAttribute('value', params[p]);
+  form.appendChild(input);
+}
 
-  
+// Add form to page and submit it to open the OAuth 2.0 endpoint.
+document.body.appendChild(form);
+form.submit();
+}
