@@ -1,6 +1,6 @@
 const ACCESS_KEY = "cklXmJYgMX1haJvgpte9N1QkEKSNJfQ-d-Qag2uL_gk";
 
-let apiKey = '';
+let apiKey = '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';
 const input = document.querySelector('.emotional-state');
 let emotionalState;
 
@@ -14,13 +14,10 @@ fetch("https://type.fit/api/quotes")
   });
 
   function fader(){
-
     let btn = document.querySelector("#submitBtn")
     btn.style.display = "none";
     let check = document.querySelector(".data");
     check.style.display = "block";
-
-
   }
 
 const stepCount = 1000;
@@ -126,11 +123,4 @@ function handle_QUERY() {
   });
 
 }
-fetch('./config.json')
-  .then(response => response.json())
-  .then(data => {
-    apiKey = data.apiKey;
-    init();
-  });
-
 
