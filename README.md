@@ -30,7 +30,7 @@ Whether you're feeling down, stressed, or energized, our website has got you cov
 
 ## Project Video
 
-[https://youtu.be/6k5t6zww7Z0]
+https://youtu.be/6k5t6zww7Z0
 
 ## Contact
 
