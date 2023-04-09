@@ -1,3 +1,10 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: #212E3A;
+}
 header {
   display: flex;
   justify-content: space-between;
