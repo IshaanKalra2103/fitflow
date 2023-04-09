@@ -7,7 +7,10 @@ header {
   margin-top: -10px;
   padding-bottom: 10px;
   }
-  
+  .data{
+    display: none;
+  }
+
   h1 {
     font-family: 'Open Sans';
     font-size: 20px;
@@ -41,8 +44,9 @@ header {
     justify-content: center;
     align-items: center;
     height: calc(15vh - 80px);
-    padding-bottom: 60px;
-    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-top: 20px;
+    margin: 10px;
  }
   .motivation {
    
@@ -50,11 +54,10 @@ header {
     font-size: 20px;
     font-weight: 600;
     text-align: center;
-    margin: 0;
-    background-color: #FF4B64;
+    margin-top: 25px;
     color: #ffffff;
     border-radius: 10px;
-    padding: 5px 20px;
+    padding: 4px 20px;
     align-content: center;
   }
   
@@ -79,6 +82,14 @@ header {
     justify-content: flex-start;
     align-items: center;
   }
+  .box img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 30px;
+  }
+
   
   h2 {
     font-family: 'Open Sans';
@@ -96,6 +107,10 @@ header {
     text-align: center;
     color: #CACDD0;
   }
+
+  p .definition{
+    padding: 10px;
+  }
   
   body {
     margin: 0;
@@ -103,4 +118,50 @@ header {
     border: none;
     background-color: #212E3A;
   }
+
+#submitBtn {
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 20%;
+  will-change: transform;
+}
+
+#submitBtn:disabled {
+  pointer-events: none;
+}
+
+#submitBtn:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  border: 2px solid #1A1A1A;
+  transform: translateY(-2px);
+}
+
+#submitBtn:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
   

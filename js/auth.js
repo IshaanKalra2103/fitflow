@@ -18,7 +18,8 @@ var params = {};
     })
         .then(data => data.json())
         .then((info) => {
-            console.log(info)
+            console.log(info);
+            console.log(info.email);
             document.getElementById('name').innerHTML += info.name
             document.getElementById('image').setAttribute('src',info.picture)
         })
