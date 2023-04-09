@@ -1,6 +1,6 @@
 const ACCESS_KEY = "cklXmJYgMX1haJvgpte9N1QkEKSNJfQ-d-Qag2uL_gk";
 
-let apiKey = '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';
+let apiKey = '';
 const input = document.querySelector('.emotional-state');
 let emotionalState;
 
@@ -126,4 +126,11 @@ function handle_QUERY() {
   });
 
 }
+fetch('./config.json')
+  .then(response => response.json())
+  .then(data => {
+    apiKey = data.apiKey;
+    init();
+  });
+
 
