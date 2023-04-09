@@ -136,10 +136,10 @@ header {
   cursor: pointer;
   display: inline-block;
   font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 16px;
+  font-size: 70px;
   font-weight: 600;
   line-height: normal;
-  margin: 0;
+  margin-top: 20rem;
   min-height: 60px;
   min-width: 0;
   outline: none;
@@ -150,7 +150,7 @@ header {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  width: 20%;
+  width: 70%;
   will-change: transform;
 }
 

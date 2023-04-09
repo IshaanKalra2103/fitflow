@@ -14,8 +14,13 @@ fetch("https://type.fit/api/quotes")
   });
 
   function fader(){
+
+    let btn = document.querySelector("#submitBtn")
+    btn.style.display = "none";
     let check = document.querySelector(".data");
     check.style.display = "block";
+
+
   }
 
 const stepCount = 1000;
