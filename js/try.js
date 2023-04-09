@@ -1,6 +1,6 @@
 const ACCESS_KEY = "cklXmJYgMX1haJvgpte9N1QkEKSNJfQ-d-Qag2uL_gk";
 
-let apiKey = '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';
+let apiKey = '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';
 const input = document.querySelector('.emotional-state');
 let emotionalState;
 
@@ -40,31 +40,32 @@ submitBtn.addEventListener('click', () => {
   handle_QUERY();
 });
 
-function image_process(q1){
-  const query = q1;
-  const apiUrl = `https://api.unsplash.com/search/photos?query=${query}&client_id=${ACCESS_KEY}`;
+// function image_process(q1){
+//   const query = q1;
+//   const apiUrl = `https://api.unsplash.com/search/photos?query=${query}&client_id=${ACCESS_KEY}`;
   
-  fetch(apiUrl)
-    .then(response => {
-      return response.json();
-    })
-    .then(data => {
-      console.log(data.results);
-      // Use the first image's URL to create an img tag
-      const imgSrc = data.results[0].urls.regular;
-      const img = document.querySelector('#workout-image');
-      img.src = imgSrc;
-      img.style.width = '200px';
-      img.style.height = '200px';
-      img.style.borderRadius = '50%';
+//   fetch(apiUrl)
+//     .then(response => {
+//       return response.json();
+//     })
+//     .then(data => {
+//       console.log(data.results);
+//       // Use the first image's URL to create an img tag
+//       const imgSrc = data.results[0].urls.regular;
+//       const img = document.querySelector('#workout-image');
+//       img.src = imgSrc;
+//       img.style.width = '200px';
+//       img.style.height = '200px';
+//       img.style.borderRadius = '50%';
+//       img.style.position = "relative"
 
-      // Add the img tag to the document body
-      document.body.appendChild(img);
-    })
-    .catch(error => {
-      console.log(error);
-    });
-}
+//       // Add the img tag to the document body
+//       document.body.appendChild(img);
+//     })
+//     .catch(error => {
+//       console.log(error);
+//     });
+// }
 
 function handle_QUERY() {
 
@@ -107,7 +108,6 @@ function handle_QUERY() {
         const workoutName = box.querySelector('.workout'); // select the h2 element within the box div
         workoutName.textContent = workouts[i]; // set the text content of the h2 element
 
-        image_process(workouts[i]);
       }
       }
 

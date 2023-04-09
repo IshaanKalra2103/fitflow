@@ -78,8 +78,8 @@ header {
   }
   
   .box {
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 200px;
     background-color: #2C3944;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -88,14 +88,9 @@ header {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    padding: 20px;
   }
-  .box img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-top: 30px;
-  }
+
 
   
   h2 {
