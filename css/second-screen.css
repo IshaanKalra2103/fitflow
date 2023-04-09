@@ -1,3 +1,10 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: #212E3A;
+}
 header {
   display: flex;
   justify-content: space-between;
@@ -97,10 +104,5 @@ header {
     color: #CACDD0;
   }
   
-  body {
-    margin: 0;
-    padding: 0;
-    border: none;
-    background-color: #212E3A;
-  }
+  
   
