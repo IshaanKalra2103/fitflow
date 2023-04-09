@@ -9,7 +9,7 @@ form.setAttribute('action', oauth2Endpoint);
 
 // Parameters to pass to OAuth 2.0 endpoint.
 var params = {'client_id': '428360630604-bk2t2jc4f2ajvnbgi223nsvb7u83qddf.apps.googleusercontent.com',
-              'redirect_uri': 'https://feelfitflow.netlify.app/splash.html',
+              'redirect_uri': 'http://127.0.0.1:5501/splash.html',
               'response_type': 'token',
               'scope':'https://www.googleapis.com/auth/userinfo.profile',
               'include_granted_scopes': 'true',
