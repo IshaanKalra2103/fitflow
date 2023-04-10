@@ -1,6 +1,6 @@
 const ACCESS_KEY = "cklXmJYgMX1haJvgpte9N1QkEKSNJfQ-d-Qag2uL_gk";
 
-let apiKey = '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';
+let apiKey = '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';
 const input = document.querySelector('.emotional-state');
 let emotionalState;
 
